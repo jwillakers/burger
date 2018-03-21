@@ -1,34 +1,109 @@
-.burger-list {
-  margin-top: 75px;
+@font-face {
+  font-family: Bleeding_Cowboy;
+  src: url(../fonts/Bleeding_Cowboys.ttf);
 }
 
-.list-group-item {
-  height: 50px;
-  line-height: 2;
+@font-face {
+  font-family: magnolia_sky;
+  src: url(../fonts/magnolia_sky.ttf);
 }
 
-input.new-item {
-  width: 75%;
-  height: 35px;
-  margin-top: 25px;
-  margin-right: 25px;
+font-face {
+  font-family: Third_Rail;
+  src: url(../fonts/Third_Rail.ttf);
 }
 
-.list-group-item.new-item {
-  height: 100px;
+font-face {
+  font-family: julietta;
+  src: url(../fonts/julietta.ttf);
 }
 
-input.new-item:focus {
-  outline: none;
+
+body {
+  background-color: #fc6;
+  color: red;
+ 
 }
 
-.list-group-item > button.delete {
+h1{
+  font-size: 90px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: red;
+  font-style: bold;
+  font-family: "Bleeding_Cowboy";
+  
+}
+
+#pic {
+  width: 30%;
+  float: left;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+#not-eaten {
+  width: 30%;
+  float: left;
+  box-sizing: border-box;
+}
+
+#eaten {
+  width: 30%;
+  box-sizing: border-box;
   float: right;
-  height: 25px;
-  margin-top: 3px;
-  line-height: 0.5;
+
+}
+#burger-display {
+  width: 95%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+
+
+}
+#add-burger{
+  width: 100%;
+  float: left;
 }
 
-.edit {
-  width: 100%;
+#input{
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+#add-burger-button {
+  margin: auto;
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: .5; /* Firefox */
+    font-size: 12px;
+    padding: 10px;
+}
+
+button {
+  background-color: red;
+  color: #fff;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 990px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 990px;
+  }
 }
